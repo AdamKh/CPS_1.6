@@ -1,0 +1,111 @@
+@media screen and (min-width: 1120px) {
+  body {
+    max-width: 1120px;
+  }
+
+  .item_PC {
+    display: block;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .main {
+    padding: 40px 30px;
+    background-color: #f8f8f8;
+  }
+
+  .main__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .main__title::before {
+    margin-left: -30px;
+  }
+
+  .main__header-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .main__header-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 30px;
+  }
+
+  .main__header-button span {
+    margin-right: 10px;
+  }
+
+  .slide-menu {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  .slide-menu__link,
+  .slide-menu__link:last-child,
+  .slide-menu__link:first-child {
+    margin: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .block {
+    padding: 0;
+    padding-top: 24px;
+  }
+
+  .block__cps-img {
+    min-width: 520px;
+  }
+
+  .block__text--item--PC {
+    display: inline;
+  }
+
+  .repair-brands__catalog {
+    padding: 0 32px;
+  }
+
+  .repair-brands__header {
+    padding: 16px 32px;
+  }
+
+  .brand-card--table-hidden {
+    display: flex;
+  }
+
+  .repair-brands__catalog--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .brand-card--pc-hidden {
+    display: none;
+  }
+
+  .brand-card--pc-show {
+    display: flex;
+  }
+}

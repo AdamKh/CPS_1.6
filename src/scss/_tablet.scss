@@ -1,0 +1,94 @@
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding: 25px;
+  }
+
+  [class$='--item--tablet'] {
+    display: block;
+  }
+
+  .header__left .header__item--vertica-line--left::before {
+    content: '';
+    display: inline-block;
+    height: 32px;
+    width: 2px;
+    background-color: #eaeaea;
+    border-radius: 1px;
+    margin-right: 16px;
+  }
+
+  .header__right .header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .main__title::before {
+    margin-right: 22px;
+  }
+
+  .slide-menu__link:first-child {
+    margin-left: 24px;
+  }
+
+  .slide-menu__link:last-child {
+    margin-right: 24px;
+  }
+
+  .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 35px;
+    padding: 0 24px;
+  }
+  .block__left-container {
+    padding: 0;
+  }
+
+  .block__text--item--tablet {
+    margin-top: 25px;
+  }
+
+  .block__cps-img {
+    min-width: 360px;
+    border-radius: 5px;
+  }
+
+  .repair-brands__show-more {
+    display: flex;
+  }
+
+  .repair-brands__wrapper {
+    margin-bottom: 24px;
+  }
+
+  .repair-brands__catalog {
+    padding: 0 24px;
+  }
+
+  .brand-card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .repair-brands__header {
+    padding: 16px 24px;
+    margin-bottom: 24px;
+  }
+
+  .repair-brands__catalog--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .brand-card--table-hidden {
+    display: none;
+  }
+
+  .brand-card--table-show {
+    display: flex;
+  }
+}
