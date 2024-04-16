@@ -8,10 +8,20 @@
 
 @import 'main.scss';
 
+@import '_block.scss';
+
+@import '_slide-menu.scss';
+
 @import 'swiper.scss';
 
 @import 'repair-brands.scss';
 
-@import 'tablet.scss';
+@import 'repair-kinds.scss';
 
-@import 'PC.scss';
+@import 'show-more.scss';
+
+@import 'section-header.scss';
+
+@import '_media.scss';
+
+@import '_sidebar.scss';

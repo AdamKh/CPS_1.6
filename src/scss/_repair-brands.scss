@@ -1,19 +1,102 @@
-.repair-brands::before {
-  display: block;
-  position: absolute;
-  content: '';
-  top: 0;
-  width: 100%;
-  height: 1px;
-  background: #d9fff5;
-}
+$width-md: 768px;
+$width-lg: 1120px;
 
-.repair-brands__header {
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #7e7e82;
-  background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
-  padding: 16px;
+.repair-brands {
+  margin-bottom: 24px;
 
-  margin-bottom: 16px;
+  .repair-brands::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: #d9fff5;
+  }
+
+  .repair-brands__catalog {
+    padding: 0 16px;
+
+    @media screen and (min-width: $width-md) {
+      padding: 0 24px;
+    }
+    @media screen and (min-width: $width-lg) {
+      padding: 0 32px;
+    }
+  }
+
+  .repair-brands__catalog--grid {
+    @media screen and (min-width: $width-md) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      gap: 16px;
+      width: 100%;
+    }
+    @media screen and (min-width: $width-lg) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .brand-card {
+    padding: 0 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    min-width: 224px;
+    max-width: 240px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .brand-card:not(:last-child) {
+    margin-right: 16px;
+    @media screen and (min-width: $width-md) {
+      margin-right: 0;
+    }
+  }
+
+  .brand-card--table-hidden {
+    @media screen and (min-width: $width-md) {
+      display: none;
+    }
+    @media screen and (min-width: $width-lg) {
+      display: flex;
+    }
+  }
+  .brand-card--table-show {
+    @media screen and (min-width: $width-md) {
+      display: flex;
+    }
+  }
+  .brand-card--pc-hidden {
+    @media screen and (min-width: $width-lg) {
+      display: none;
+    }
+  }
+  .brand-card--pc-show {
+    @media screen and (min-width: $width-lg) {
+      display: flex;
+    }
+  }
+
+  .brand-card__button {
+    border: 2px solid #ff3e79;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dropdown.svg') no-repeat center;
+  }
+
+  .brand-card__image {
+    display: block;
+    margin-left: 16px;
+  }
+
+  .repair-brands__swiper-pagination {
+    margin-bottom: 24px;
+  }
 }

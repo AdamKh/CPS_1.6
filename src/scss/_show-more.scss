@@ -1,0 +1,29 @@
+$width-md: 768px;
+$width-lg: 1120px;
+
+.show-more {
+  display: none;
+  margin-bottom: 34px;
+  @media screen and (min-width: $width-md) {
+    display: flex !important;
+  }
+}
+
+.show-more {
+  color: #000;
+  font-weight: bold;
+  display: none;
+  align-items: center;
+}
+
+.show-more--show::before {
+  content: url('../img/icons/arrow-down.svg');
+  margin-right: 9px;
+}
+
+.show-more--close::before {
+  content: url('../img/icons/arrow-down.svg');
+  margin-right: 9px;
+
+  transform: rotate(180deg);
+}

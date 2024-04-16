@@ -1,0 +1,72 @@
+$width-md: 768px;
+$width-lg: 1120px;
+
+.block {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $width-md) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 35px;
+    padding: 0 24px;
+  }
+  @media screen and (min-width: $width-md) {
+    padding: 0;
+    padding-top: 24px;
+  }
+}
+
+.block p {
+  font-size: 14px;
+}
+
+.block__right-container {
+  padding: 0;
+
+  @media screen and (min-width: $width-md) {
+    padding-right: 24px;
+  }
+  @media screen and (min-width: $width-lg) {
+    padding-right: 34px;
+  }
+}
+
+.link__read-more {
+  color: #000;
+  font-weight: bold;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 20px 0;
+}
+
+.link__read-more::before {
+  content: url('../img/icons/arrow-down.svg');
+  margin: auto 15px;
+  margin-left: 5px;
+}
+
+.block__cps-img {
+  width: 100%;
+  padding: 0;
+
+  @media screen and (min-width: $width-md) {
+    padding-right: 24px;
+    min-width: 360px;
+    border-radius: 5px;
+  }
+  @media screen and (min-width: $width-lg) {
+    min-width: 520px !important;
+  }
+}
+
+.block__text--item--tablet {
+  margin-top: 25px;
+}
+
+.block__text--item--PC {
+  @media screen and (min-width: $width-lg) {
+    display: inline;
+  }
+}

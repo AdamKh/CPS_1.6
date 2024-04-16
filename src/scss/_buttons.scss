@@ -12,6 +12,11 @@ button {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition-duration: 0.3s;
+}
+
+.icon:hover {
+  opacity: 0.7;
 }
 
 .button_burger {
@@ -36,4 +41,20 @@ button {
 
 .button_checkstatus {
   background-image: url('../img/icons/checkstatus.svg');
+}
+
+.button_search {
+  background-image: url('../img/icons/search.svg');
+}
+
+.button_close {
+  background-image: url('../img/icons/close.svg');
+}
+
+.button_call {
+  background-image: url('../img/icons/call.svg');
+}
+
+.button_profile {
+  background-image: url('../img/icons/profile.svg');
 }

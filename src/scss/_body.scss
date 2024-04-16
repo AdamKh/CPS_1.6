@@ -1,11 +1,25 @@
-body,
-* {
+$width-md: 768px;
+$width-lg: 1120px;
+
+body {
   font-family: TTLakes;
   color: #1b1c21;
   margin: 0 auto;
   background-color: #f8f8f8;
   font-size: 16px;
+
+  @media screen and (min-width: $width-lg) {
+    max-width: 1120px;
+  }
 }
+
+button {
+  font-family: TTLakes;
+  color: #1b1c21;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -20,6 +34,12 @@ body,
 
 .link {
   text-decoration: none;
+  color: #1b1c21;
+  transition-duration: 0.5s;
+}
+
+.link:hover {
+  color: #999;
 }
 
 [class$='--flex-center'] {
@@ -29,4 +49,16 @@ body,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.container {
+  padding: 0 16px;
+  @media screen and (min-width: $width-md) {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  @media screen and (min-width: $width-lg) {
+    padding-left: 34px !important;
+    padding-right: 34px !important;
+  }
 }

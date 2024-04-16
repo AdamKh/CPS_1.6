@@ -15,7 +15,7 @@
             class="header__item button_burger icon"
           ></button>
           <div
-            class="header__item header__item--vertica-line--left header__item--flex-center"
+            class="header__item header__item--vertical-line--left header__item--flex-center"
           >
             <a href="#" class="header__item"
               ><img
@@ -44,7 +44,7 @@
             ></button>
           </div>
           <div
-            class="header__item--vertica-line--left header__wrapper--flex-center"
+            class="header__item--vertical-line--left header__wrapper--flex-center"
           >
             <button
               name="button_repair"
@@ -60,20 +60,21 @@
     </header>
 
     <main class="main">
-      <div class="main__header">
+      <div class="main__header container">
         <h1 class="main__title">Услуги и сервисы</h1>
         <div class="main__header-buttons main__header-buttons--item--PC">
           <button name="button_repair" class="main__header-button"
-            ><span>Оставить заявку</span><div class="button_repair icon"></div
+            ><a class="link">Оставить заявку</a
+            ><div class="button_repair icon"></div
           ></button>
           <button name="button_checkstatus" class="main__header-button"
-            ><span>Статус ремонта</span
+            ><a class="link">Статус ремонта</a
             ><div class="button_checkstatus icon"></div
           ></button>
         </div>
       </div>
 
-      <nav class="slide-menu">
+      <nav class="slide-menu container">
         <a href="#" class="slide-menu__link slide-menu__link--active link"
           >Ремонтируемые бренды</a
         >
@@ -85,7 +86,7 @@
       </nav>
 
       <div class="block">
-        <div class="block__left-container">
+        <div class="block__left-container container">
           <p class="block__text">
             Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
@@ -114,13 +115,16 @@
           />
         </div>
       </div>
-      <div class="repair-brands container">
-        <h2 class="repair-brands__header"
-          >Ремонт различной техники и брендов</h2
-        >
+
+      <section class="repair-brands">
+        <div class="section-header repair-brands__header">
+          <h2 class="section-header__text container"
+            >Ремонт различной техники и брендов
+          </h2>
+        </div>
 
         <div
-          class="repair-brands__catalog repair-brands__catalog--mySwiper swiper"
+          class="repair-brands__catalog repair-brands__catalog--mySwiper swiper container"
         >
           <div class="swiper-wrapper repair-brands__wrapper">
             <div class="swiper-slide brand-card">
@@ -254,17 +258,169 @@
             </div>
           </div>
 
-          <div class="swiper-pagination"></div>
+          <div class="repair-brands__swiper-pagination swiper-pagination"></div>
 
-          <button
-            class="repair-brands__show-more repair-brands__show-more--show show-more"
-          >
+          <button class="repair-brands__show-more show-more--show show-more">
             Показать все
           </button>
         </div>
+      </section>
+
+      <section class="repair-kinds">
+        <div class="section-header repair-kinds__header">
+          <h2 class="section-header__text container"
+            >Ремонт различных видов техники</h2
+          >
+        </div>
+
+        <div
+          class="repair-kinds__catalog repair-kinds__catalog--mySwiper swiper container"
+        >
+          <div class="swiper-wrapper repair-kinds__wrapper">
+            <div class="swiper-slide kind-card">
+              <p>Ремонт ноутбуков</p>
+              <button class="kind-card__button"></button>
+            </div>
+
+            <div class="swiper-slide kind-card">
+              <p>Ремонт планшетов</p>
+              <button class="kind-card__button"></button>
+            </div>
+
+            <div class="swiper-slide kind-card">
+              <p>Ремонт ПК</p>
+              <button class="kind-card__button"></button>
+            </div>
+
+            <!-- display: none; for min width screen 768px -->
+            <div class="swiper-slide kind-card kind-card--table-hidden">
+              <p>Ремонт мониторов</p>
+              <button class="kind-card__button"></button>
+            </div>
+
+            <!-- display: none; for min width screen 1120px -->
+            <div
+              class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
+            >
+              <p>Ремонт принтеров</p>
+              <button class="kind-card__button"></button>
+            </div>
+
+            <div
+              class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
+            >
+              <p>Ремонт фотоаппаратов</p>
+              <button class="kind-card__button"></button>
+            </div>
+
+            <div
+              class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
+            >
+              <p>Ремонт видеокамер</p>
+              <button class="kind-card__button"></button>
+            </div>
+
+            <div
+              class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
+            >
+              <p>Ремонт чайников</p>
+              <button class="kind-card__button"></button>
+            </div>
+          </div>
+
+          <div class="repair-kinds__swiper-pagination swiper-pagination"></div>
+
+          <button class="repair-kinds__show-more show-more--show show-more">
+            Показать все
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <aside class="sidebar">
+      <div class="sidebar__header sidebar__header--flex-center">
+        <div class="siderbar__header-left siderbar__header-left--flex-center">
+          <button
+            name="sidebar_header_button_close"
+            class="sidebar__header-item button_close icon"
+          ></button>
+          <img
+            src="img/icons/logo.svg"
+            alt="Логотип CPS"
+            class="siderbar__header-logo"
+          />
+        </div>
+        <div class="siderbar__header-right">
+          <button
+            name="sidebar_header_button_search"
+            class="sidebar__header-item sidebar__header-item--flex-center button_search icon"
+          ></button>
+        </div>
       </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    </main>
+      <nav class="sidebar__menu">
+        <ul>
+          <li class="sidebar__menu-item sidebar__menu-item--active">
+            <a class="link" href="#">Ремонт техники</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="link" href="#">Услуги и сервисы</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="link" href="#">Корпоративным клиентам </a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="link" href="#">Продавцам техники</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="link" href="#">Партнерам</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="link" href="#">Производителям</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="link" href="#">Наши сервисные центры</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="contacts">
+          <div class="contancts__buttons">
+            <button
+              name="button_call"
+              class="contancts__button button_call icon"
+            ></button>
+            <button
+              name="button_chat"
+              class="contancts__button button_chat icon"
+            ></button>
+            <button
+              name="button_profile"
+              class="contancts__button button_profile icon"
+            ></button>
+          </div>
+
+          <div class="contancts__link contacts__cps-mail">
+            <a class="link" href="mail@cps.com">mail@cps.com</a>
+          </div>
+          <div class="contancts__link contacts__number">
+            <a class="link" href="#">8 800 890 8900</a>
+          </div>
+        </div>
+        <div class="change-lang">
+          <a class="change-lang__link change-lang__link--active link" href="#"
+            >RU</a
+          >
+          <a class="change-lang__link link" href="#">EN</a>
+          <a class="change-lang__link link" href="#">CH</a>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>
