@@ -127,3 +127,18 @@ showMoreKinds.addEventListener('click', function () {
     showMoreKinds.classList.add('show-more--show')
   }
 })
+
+const sidebar = document.querySelector('.sidebar')
+const notAside = document.querySelector('.not-aside')
+const burger = document.querySelector('.button_burger')
+const closeSidebar = document.querySelector('.button_close')
+
+burger.addEventListener('click', function () {
+  sidebar.classList.toggle('sidebar-show')
+  notAside.classList.toggle('not-aside--opacity')
+})
+
+closeSidebar.addEventListener('click', function () {
+  sidebar.classList.toggle('sidebar-show')
+  notAside.classList.toggle('not-aside--opacity')
+})

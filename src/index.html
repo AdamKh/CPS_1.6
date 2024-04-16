@@ -7,338 +7,6 @@
     <title>CPS_V1.0</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__left header__left--flex-center">
-          <button
-            name="header_button_burger"
-            class="header__item button_burger icon"
-          ></button>
-          <div
-            class="header__item header__item--vertical-line--left header__item--flex-center"
-          >
-            <a href="#" class="header__item"
-              ><img
-                src="img/icons/logo.svg"
-                alt="Логотип CPS"
-                class="header__logo"
-            /></a>
-          </div>
-        </div>
-
-        <div class="header__right header__right--flex-center">
-          <div
-            class="header__wrapper header__wrapper--flex-center header__wrapper--item--tablet"
-          >
-            <button
-              name="button_contacts"
-              class="header__item button_contacts icon"
-            ></button>
-            <button
-              name="button_chat"
-              class="header__item button_chat icon"
-            ></button>
-            <button
-              name="button_profile"
-              class="header__item button_profile icon"
-            ></button>
-          </div>
-          <div
-            class="header__item--vertical-line--left header__wrapper--flex-center"
-          >
-            <button
-              name="button_repair"
-              class="header__item button_repair icon"
-            ></button>
-            <button
-              name="button_checkstatus"
-              class="header__item button_checkstatus icon"
-            ></button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="main__header container">
-        <h1 class="main__title">Услуги и сервисы</h1>
-        <div class="main__header-buttons main__header-buttons--item--PC">
-          <button name="button_repair" class="main__header-button"
-            ><a class="link">Оставить заявку</a
-            ><div class="button_repair icon"></div
-          ></button>
-          <button name="button_checkstatus" class="main__header-button"
-            ><a class="link">Статус ремонта</a
-            ><div class="button_checkstatus icon"></div
-          ></button>
-        </div>
-      </div>
-
-      <nav class="slide-menu container">
-        <a href="#" class="slide-menu__link slide-menu__link--active link"
-          >Ремонтируемые бренды</a
-        >
-        <a href="#" class="slide-menu__link link">Ремонтируемые устройства</a>
-        <a href="#" class="slide-menu__link link">Цены на услуги</a>
-        <a href="#" class="slide-menu__link link">Адреса сервисных центров</a>
-        <a href="#" class="slide-menu__link link">Специальные цены</a>
-        <a href="#" class="slide-menu__link link">Отзывы</a>
-      </nav>
-
-      <div class="block">
-        <div class="block__left-container container">
-          <p class="block__text">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-          </p>
-
-          <p class="block__text block__text--item--tablet">
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера<span class="block__text block__text--item--PC"
-              >, что подтверждает большое количество постоянных клиентов. Мы
-              гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.</span
-            >
-          </p>
-
-          <div class="block__link">
-            <a href="#" class="link__read-more link">Читать далее</a>
-          </div>
-        </div>
-
-        <div class="block__right-container">
-          <img
-            src="img/cps_img.jpg"
-            alt="Картинка CPS"
-            class="block__cps-img"
-          />
-        </div>
-      </div>
-
-      <section class="repair-brands">
-        <div class="section-header repair-brands__header">
-          <h2 class="section-header__text container"
-            >Ремонт различной техники и брендов
-          </h2>
-        </div>
-
-        <div
-          class="repair-brands__catalog repair-brands__catalog--mySwiper swiper container"
-        >
-          <div class="swiper-wrapper repair-brands__wrapper">
-            <div class="swiper-slide brand-card">
-              <div class="img-wrapper">
-                <!-- обертка для исправления искажения img при display: flex; -->
-                <img
-                  src="img/brands/lenovo.png"
-                  alt="Lenovo"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <div class="swiper-slide brand-card">
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/sumsung.png"
-                  alt="sumsung"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <div class="swiper-slide brand-card">
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/apple.png"
-                  alt="apple"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <div class="swiper-slide brand-card">
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/viewsonic.png"
-                  alt="ViewSonic"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <div class="swiper-slide brand-card">
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/bosch.png"
-                  alt="bosch"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <div class="swiper-slide brand-card">
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/hp.png"
-                  alt="hp"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <!-- display: none; for min width screen 768px -->
-            <div class="swiper-slide brand-card brand-card--table-hidden">
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/acer.png"
-                  alt="acer"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <div class="swiper-slide brand-card brand-card--table-hidden">
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/sony.png"
-                  alt="sony"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <!-- display: none; for min width screen 1120px -->
-            <div
-              class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden"
-            >
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/lenovo.png"
-                  alt="Lenovo"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <div
-              class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden"
-            >
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/sumsung.png"
-                  alt="sumsung"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-
-            <div
-              class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden"
-            >
-              <div class="img-wrapper">
-                <img
-                  src="img/brands/apple.png"
-                  alt="apple"
-                  class="brand-card__image"
-                />
-              </div>
-              <button class="brand-card__button"></button>
-            </div>
-          </div>
-
-          <div class="repair-brands__swiper-pagination swiper-pagination"></div>
-
-          <button class="repair-brands__show-more show-more--show show-more">
-            Показать все
-          </button>
-        </div>
-      </section>
-
-      <section class="repair-kinds">
-        <div class="section-header repair-kinds__header">
-          <h2 class="section-header__text container"
-            >Ремонт различных видов техники</h2
-          >
-        </div>
-
-        <div
-          class="repair-kinds__catalog repair-kinds__catalog--mySwiper swiper container"
-        >
-          <div class="swiper-wrapper repair-kinds__wrapper">
-            <div class="swiper-slide kind-card">
-              <p>Ремонт ноутбуков</p>
-              <button class="kind-card__button"></button>
-            </div>
-
-            <div class="swiper-slide kind-card">
-              <p>Ремонт планшетов</p>
-              <button class="kind-card__button"></button>
-            </div>
-
-            <div class="swiper-slide kind-card">
-              <p>Ремонт ПК</p>
-              <button class="kind-card__button"></button>
-            </div>
-
-            <!-- display: none; for min width screen 768px -->
-            <div class="swiper-slide kind-card kind-card--table-hidden">
-              <p>Ремонт мониторов</p>
-              <button class="kind-card__button"></button>
-            </div>
-
-            <!-- display: none; for min width screen 1120px -->
-            <div
-              class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
-            >
-              <p>Ремонт принтеров</p>
-              <button class="kind-card__button"></button>
-            </div>
-
-            <div
-              class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
-            >
-              <p>Ремонт фотоаппаратов</p>
-              <button class="kind-card__button"></button>
-            </div>
-
-            <div
-              class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
-            >
-              <p>Ремонт видеокамер</p>
-              <button class="kind-card__button"></button>
-            </div>
-
-            <div
-              class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
-            >
-              <p>Ремонт чайников</p>
-              <button class="kind-card__button"></button>
-            </div>
-          </div>
-
-          <div class="repair-kinds__swiper-pagination swiper-pagination"></div>
-
-          <button class="repair-kinds__show-more show-more--show show-more">
-            Показать все
-          </button>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer"></footer>
-
     <aside class="sidebar">
       <div class="sidebar__header sidebar__header--flex-center">
         <div class="siderbar__header-left siderbar__header-left--flex-center">
@@ -422,5 +90,343 @@
         </div>
       </div>
     </aside>
+
+    <div class="not-aside">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__left header__left--flex-center">
+            <button
+              name="header_button_burger"
+              class="header__item button_burger icon"
+            ></button>
+            <div
+              class="header__item header__item--vertical-line--left header__item--flex-center"
+            >
+              <a href="#" class="header__item"
+                ><img
+                  src="img/icons/logo.svg"
+                  alt="Логотип CPS"
+                  class="header__logo"
+              /></a>
+            </div>
+          </div>
+
+          <div class="header__right header__right--flex-center">
+            <div
+              class="header__wrapper header__wrapper--flex-center header__wrapper--item--tablet"
+            >
+              <button
+                name="button_contacts"
+                class="header__item button_contacts icon"
+              ></button>
+              <button
+                name="button_chat"
+                class="header__item button_chat icon"
+              ></button>
+              <button
+                name="button_profile"
+                class="header__item button_profile icon"
+              ></button>
+            </div>
+            <div
+              class="header__item--vertical-line--left header__wrapper--flex-center"
+            >
+              <button
+                name="button_repair"
+                class="header__item button_repair icon"
+              ></button>
+              <button
+                name="button_checkstatus"
+                class="header__item button_checkstatus icon"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main__header container">
+          <h1 class="main__title">Услуги и сервисы</h1>
+          <div class="main__header-buttons main__header-buttons--item--PC">
+            <button name="button_repair" class="main__header-button"
+              ><a class="link">Оставить заявку</a
+              ><div class="button_repair icon"></div
+            ></button>
+            <button name="button_checkstatus" class="main__header-button"
+              ><a class="link">Статус ремонта</a
+              ><div class="button_checkstatus icon"></div
+            ></button>
+          </div>
+        </div>
+
+        <nav class="slide-menu container">
+          <a href="#" class="slide-menu__link slide-menu__link--active link"
+            >Ремонтируемые бренды</a
+          >
+          <a href="#" class="slide-menu__link link">Ремонтируемые устройства</a>
+          <a href="#" class="slide-menu__link link">Цены на услуги</a>
+          <a href="#" class="slide-menu__link link">Адреса сервисных центров</a>
+          <a href="#" class="slide-menu__link link">Специальные цены</a>
+          <a href="#" class="slide-menu__link link">Отзывы</a>
+        </nav>
+
+        <div class="block">
+          <div class="block__left-container container">
+            <p class="block__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+
+            <p class="block__text block__text--item--tablet">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера<span class="block__text block__text--item--PC"
+                >, что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.</span
+              >
+            </p>
+
+            <div class="block__link">
+              <a href="#" class="link__read-more link">Читать далее</a>
+            </div>
+          </div>
+
+          <div class="block__right-container">
+            <img
+              src="img/cps_img.jpg"
+              alt="Картинка CPS"
+              class="block__cps-img"
+            />
+          </div>
+        </div>
+
+        <section class="repair-brands">
+          <div class="section-header repair-brands__header">
+            <h2 class="section-header__text container"
+              >Ремонт различной техники и брендов
+            </h2>
+          </div>
+
+          <div
+            class="repair-brands__catalog repair-brands__catalog--mySwiper swiper container"
+          >
+            <div class="swiper-wrapper repair-brands__wrapper">
+              <div class="swiper-slide brand-card">
+                <div class="img-wrapper">
+                  <!-- обертка для исправления искажения img при display: flex; -->
+                  <img
+                    src="img/brands/lenovo.png"
+                    alt="Lenovo"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <div class="swiper-slide brand-card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/sumsung.png"
+                    alt="sumsung"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <div class="swiper-slide brand-card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/apple.png"
+                    alt="apple"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <div class="swiper-slide brand-card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/viewsonic.png"
+                    alt="ViewSonic"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <div class="swiper-slide brand-card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/bosch.png"
+                    alt="bosch"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <div class="swiper-slide brand-card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/hp.png"
+                    alt="hp"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <!-- display: none; for min width screen 768px -->
+              <div class="swiper-slide brand-card brand-card--table-hidden">
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/acer.png"
+                    alt="acer"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <div class="swiper-slide brand-card brand-card--table-hidden">
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/sony.png"
+                    alt="sony"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <!-- display: none; for min width screen 1120px -->
+              <div
+                class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden"
+              >
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/lenovo.png"
+                    alt="Lenovo"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <div
+                class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden"
+              >
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/sumsung.png"
+                    alt="sumsung"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+
+              <div
+                class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden"
+              >
+                <div class="img-wrapper">
+                  <img
+                    src="img/brands/apple.png"
+                    alt="apple"
+                    class="brand-card__image"
+                  />
+                </div>
+                <button class="brand-card__button"></button>
+              </div>
+            </div>
+
+            <div
+              class="repair-brands__swiper-pagination swiper-pagination"
+            ></div>
+
+            <button class="repair-brands__show-more show-more--show show-more">
+              Показать все
+            </button>
+          </div>
+        </section>
+
+        <section class="repair-kinds">
+          <div class="section-header repair-kinds__header">
+            <h2 class="section-header__text container"
+              >Ремонт различных видов техники</h2
+            >
+          </div>
+
+          <div
+            class="repair-kinds__catalog repair-kinds__catalog--mySwiper swiper container"
+          >
+            <div class="swiper-wrapper repair-kinds__wrapper">
+              <div class="swiper-slide kind-card">
+                <p>Ремонт ноутбуков</p>
+                <button class="kind-card__button"></button>
+              </div>
+
+              <div class="swiper-slide kind-card">
+                <p>Ремонт планшетов</p>
+                <button class="kind-card__button"></button>
+              </div>
+
+              <div class="swiper-slide kind-card">
+                <p>Ремонт ПК</p>
+                <button class="kind-card__button"></button>
+              </div>
+
+              <!-- display: none; for min width screen 768px -->
+              <div class="swiper-slide kind-card kind-card--table-hidden">
+                <p>Ремонт мониторов</p>
+                <button class="kind-card__button"></button>
+              </div>
+
+              <!-- display: none; for min width screen 1120px -->
+              <div
+                class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
+              >
+                <p>Ремонт принтеров</p>
+                <button class="kind-card__button"></button>
+              </div>
+
+              <div
+                class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
+              >
+                <p>Ремонт фотоаппаратов</p>
+                <button class="kind-card__button"></button>
+              </div>
+
+              <div
+                class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
+              >
+                <p>Ремонт видеокамер</p>
+                <button class="kind-card__button"></button>
+              </div>
+
+              <div
+                class="swiper-slide kind-card kind-card--table-hidden kind-card--pc-hidden"
+              >
+                <p>Ремонт чайников</p>
+                <button class="kind-card__button"></button>
+              </div>
+            </div>
+
+            <div
+              class="repair-kinds__swiper-pagination swiper-pagination"
+            ></div>
+
+            <button class="repair-kinds__show-more show-more--show show-more">
+              Показать все
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>

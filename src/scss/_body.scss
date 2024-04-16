@@ -1,15 +1,25 @@
 $width-md: 768px;
 $width-lg: 1120px;
 
+.not-aside {
+  @media screen and (min-width: $width-lg) {
+    margin-left: 320px;
+  }
+
+  &--opacity {
+    opacity: 10%;
+  }
+}
+
 body {
   font-family: TTLakes;
   color: #1b1c21;
   margin: 0 auto;
-  background-color: #f8f8f8;
+  background-color: hsl(0, 0%, 97%);
   font-size: 16px;
 
   @media screen and (min-width: $width-lg) {
-    max-width: 1120px;
+    max-width: 1440px;
   }
 }
 
