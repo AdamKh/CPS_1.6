@@ -1,27 +1,29 @@
-@import 'fonts.scss';
+@import '_fonts.scss';
 
-@import 'body.scss';
+@import '_body.scss';
 
-@import 'buttons.scss';
+@import '_buttons.scss';
 
-@import 'header.scss';
+@import '_header.scss';
 
-@import 'main.scss';
+@import '_main.scss';
 
 @import '_block.scss';
 
 @import '_slide-menu.scss';
 
-@import 'swiper.scss';
+@import '_swiper.scss';
 
-@import 'repair-brands.scss';
+@import '_repair-brands.scss';
 
-@import 'repair-kinds.scss';
+@import '_repair-kinds.scss';
 
-@import 'show-more.scss';
+@import '_show-more.scss';
 
-@import 'section-header.scss';
+@import '_section-header.scss';
 
 @import '_media.scss';
 
 @import '_sidebar.scss';
+
+@import '_footer.scss';

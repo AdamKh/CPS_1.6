@@ -1,0 +1,47 @@
+$width-md: 768px;
+$width-lg: 1120px;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+
+  border-top: 1px solid #d9fff5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: #7e7e82;
+
+  @media screen and (min-width: $width-md) {
+    flex-direction: row;
+    gap: 0;
+    padding: 32px;
+  }
+
+  div {
+    @media screen and (min-width: $width-md) {
+      width: 220px;
+    }
+  }
+
+  &__developers p {
+    @media screen and (min-width: $width-md) {
+      text-align: left;
+    }
+  }
+
+  &__policy p {
+    @media screen and (min-width: $width-md) {
+      text-align: center;
+    }
+  }
+
+  &__public-info p {
+    @media screen and (min-width: $width-md) {
+      text-align: right;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 $width-md: 768px;
 $width-lg: 1120px;
+$width-desktop: 1366px;
 
 .sidebar-show {
   display: flex !important;
@@ -25,7 +26,7 @@ $width-lg: 1120px;
   @media screen and (min-width: $width-md) {
     width: 320px;
   }
-  @media screen and (min-width: $width-lg) {
+  @media screen and (min-width: $width-desktop) {
     width: 320px;
     display: flex;
     box-shadow: none;

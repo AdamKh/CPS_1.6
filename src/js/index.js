@@ -1,6 +1,8 @@
-import Swiper from 'swiper'
-import { Navigation, Pagination } from 'swiper/modules'
+import Swiper from '../../node_modules/swiper'
 import '../../node_modules/swiper/swiper.scss'
+import { freeMode, Pagination } from '../../node_modules/swiper/modules'
+import '../../node_modules/swiper/modules/pagination.scss'
+import '../../node_modules/swiper/modules/free-mode.scss'
 import '../scss/style.scss'
 
 let screenWidth = document.documentElement.clientWidth
@@ -22,7 +24,7 @@ let swiperBrands = '.repair-brands__catalog--mySwiper'
 let swiperKinds = '.repair-kinds__catalog--mySwiper'
 if (mobileDevice) {
   var swiper1 = new Swiper(swiperBrands, {
-    modules: [Navigation, Pagination],
+    modules: [Pagination],
     slidesPerView: 'auto',
     spaceBetween: 0,
     freeMode: true,
@@ -33,7 +35,7 @@ if (mobileDevice) {
     }
   })
   var swiper2 = new Swiper(swiperKinds, {
-    modules: [Navigation, Pagination],
+    modules: [Pagination],
     slidesPerView: 'auto',
     spaceBetween: 0,
     freeMode: true,

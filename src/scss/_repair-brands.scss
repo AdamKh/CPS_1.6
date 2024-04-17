@@ -4,6 +4,13 @@ $width-lg: 1120px;
 .repair-brands {
   margin-bottom: 24px;
 
+  @media screen and (min-width: $width-md) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $width-lg) {
+    margin-bottom: 50px;
+  }
+
   .repair-brands::before {
     display: block;
     position: absolute;
@@ -22,6 +29,14 @@ $width-lg: 1120px;
     }
     @media screen and (min-width: $width-lg) {
       padding: 0 32px;
+    }
+  }
+
+  .repair-brands__wrapper {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $width-md) {
+      margin-bottom: 24px;
     }
   }
 
@@ -94,9 +109,5 @@ $width-lg: 1120px;
   .brand-card__image {
     display: block;
     margin-left: 16px;
-  }
-
-  .repair-brands__swiper-pagination {
-    margin-bottom: 24px;
   }
 }

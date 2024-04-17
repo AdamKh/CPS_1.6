@@ -1,7 +1,19 @@
+$width-md: 768px;
+$width-lg: 1120px;
+
+.swiper-wrapper {
+  margin-bottom: 12px;
+  @media screen and (min-width: $width-md) {
+    margin-bottom: 0;
+  }
+}
+
 .swiper-pagination {
   position: static;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
   background-color: #979797;
+  width: 12px;
+  height: 12px;
 }
