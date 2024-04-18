@@ -1,0 +1,148 @@
+$width-md: 768px;
+$width-lg: 1120px;
+$width-desktop: 1366px;
+$button-color: #ff3e79;
+
+.price-list {
+  font-size: 14px;
+
+  &__catalog {
+    margin-bottom: 16px;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: $width-md) {
+      display: block;
+      border-radius: 6px;
+    }
+  }
+
+  &__card {
+    border-radius: 6px;
+    width: 260px;
+    height: 200px;
+    background-color: #fff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+
+      @media screen and (min-width: $width-md) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (min-width: $width-md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+    }
+  }
+
+  &__card .wrapper:first-child {
+    @media screen and (min-width: $width-md) {
+      min-width: 350px;
+    }
+  }
+
+  &__card .wrapper:nth-child(2) {
+    @media screen and (min-width: $width-md) {
+      min-width: 75px;
+    }
+  }
+
+  &__card .wrapper:nth-child(3) {
+    @media screen and (min-width: $width-md) {
+      min-width: 80px;
+    }
+  }
+
+  &__card .wrapper:nth-child(4) {
+    @media screen and (min-width: $width-md) {
+      min-width: 120px;
+    }
+  }
+
+  &__card-title {
+    font-weight: 500;
+    line-height: 114%;
+    color: #7e7e82;
+
+    @media screen and (min-width: $width-md) {
+      display: none;
+    }
+
+    &--md-disp--visible {
+      display: none;
+
+      @media screen and (min-width: $width-md) {
+        display: flex;
+      }
+    }
+  }
+
+  &__card-button {
+    border-radius: 16px;
+    width: 119px;
+    height: 32px;
+    background: $button-color;
+    margin-left: 25px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+
+    @media screen and (min-width: $width-md) {
+      position: static;
+      margin: 0;
+    }
+
+    & span {
+      color: #fff;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  &__card-button::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url('../img/dropdown-white.svg') no-repeat center;
+    margin-left: 10px;
+  }
+
+  &__card--md-disp--visible {
+    display: none;
+
+    @media screen and (min-width: $width-md) {
+      display: flex;
+    }
+
+    & .wrapper:last-child {
+      min-width: 120px;
+    }
+  }
+  &__line {
+    display: none;
+    @media screen and (min-width: $width-md) {
+      display: block;
+      min-width: 688px;
+      height: 1px;
+      background-color: #eaeaea;
+      margin: 0 16px;
+    }
+  }
+}

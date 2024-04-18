@@ -2,6 +2,8 @@ $width-md: 768px;
 $width-lg: 1120px;
 $width-desktop: 1366px;
 
+$default-text-color: #1b1c21;
+
 .not-aside {
   @media screen and (min-width: $width-desktop) {
     margin-left: 320px;
@@ -14,7 +16,7 @@ $width-desktop: 1366px;
 
 body {
   font-family: TTLakes;
-  color: #1b1c21;
+  color: $default-text-color;
   margin: 0 auto;
   background-color: hsl(0, 0%, 97%);
   font-size: 16px;
@@ -26,7 +28,6 @@ body {
 
 button {
   font-family: TTLakes;
-  color: #1b1c21;
   background-color: #f8f8f8;
   font-size: 16px;
 }
@@ -36,6 +37,7 @@ button {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: $default-text-color;
 }
 
 [class$='--item--tablet'],

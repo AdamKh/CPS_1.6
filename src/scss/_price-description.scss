@@ -1,0 +1,39 @@
+$width-md: 768px;
+$width-lg: 1120px;
+$width-desktop: 1366px;
+
+.price-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  color: #1b1c21;
+  max-width: 500px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $width-desktop) {
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    font-family: TTLakes;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+  }
+  &__link::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url('../img/dropdown.svg') no-repeat center;
+
+    margin-left: 10px;
+  }
+}

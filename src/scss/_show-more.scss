@@ -3,16 +3,12 @@ $width-lg: 1120px;
 
 .show-more {
   display: none;
+  color: #000;
+  font-weight: bold;
+  align-items: center;
   @media screen and (min-width: $width-md) {
     display: flex !important;
   }
-}
-
-.show-more {
-  color: #000;
-  font-weight: bold;
-  display: none;
-  align-items: center;
 }
 
 .show-more--show::before {

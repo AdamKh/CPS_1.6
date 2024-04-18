@@ -50,7 +50,7 @@ $width-desktop: 1366px;
 }
 
 .button_close {
-  @media screen and (min-width: $width-lg) {
+  @media screen and (min-width: $width-desktop) {
     display: none;
   }
 }

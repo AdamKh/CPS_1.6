@@ -22,6 +22,7 @@ const swiperBrandsWrapper = document.querySelector('.repair-brands__wrapper')
 const swiperKindsWrapper = document.querySelector('.repair-kinds__wrapper')
 let swiperBrands = '.repair-brands__catalog--mySwiper'
 let swiperKinds = '.repair-kinds__catalog--mySwiper'
+let swiperPrice = '.price-list__catalog--mySwiper'
 if (mobileDevice) {
   var swiper1 = new Swiper(swiperBrands, {
     modules: [Pagination],
@@ -43,6 +44,24 @@ if (mobileDevice) {
     pagination: {
       el: '.repair-kinds__swiper-pagination',
       clickable: true
+    }
+  })
+  var swiper3 = new Swiper(swiperPrice, {
+    modules: [Pagination],
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    freeMode: true,
+    loop: true,
+    pagination: {
+      el: '.price-list__swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      768: {
+        initialSlide: 0,
+        spaceBetween: 0,
+        enable: false
+      }
     }
   })
 } else {
