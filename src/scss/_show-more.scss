@@ -9,16 +9,16 @@ $width-lg: 1120px;
   @media screen and (min-width: $width-md) {
     display: flex !important;
   }
-}
 
-.show-more--show::before {
-  content: url('../img/icons/arrow-down.svg');
-  margin-right: 9px;
-}
+  &--show::before {
+    content: url('../img/icons/arrow-down.svg');
+    margin-right: 9px;
+  }
 
-.show-more--close::before {
-  content: url('../img/icons/arrow-down.svg');
-  margin-right: 9px;
+  &--close::before {
+    content: url('../img/icons/arrow-down.svg');
+    margin-right: 9px;
 
-  transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }

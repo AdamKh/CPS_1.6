@@ -15,36 +15,21 @@ $width-lg: 1120px;
     padding: 0;
     padding-top: 24px;
   }
-}
 
-.block p {
-  font-size: 14px;
-}
-
-.block__right-container {
-  padding: 0;
-
-  @media screen and (min-width: $width-md) {
-    padding-right: 24px;
+  & p {
+    font-size: 14px;
   }
-  @media screen and (min-width: $width-lg) {
-    padding-right: 34px;
+
+  &__right-container {
+    padding: 0;
+
+    @media screen and (min-width: $width-md) {
+      padding-right: 24px;
+    }
+    @media screen and (min-width: $width-lg) {
+      padding-right: 34px;
+    }
   }
-}
-
-.link__read-more {
-  color: #000;
-  font-weight: bold;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 20px 0;
-}
-
-.link__read-more::before {
-  content: url('../img/icons/arrow-down.svg');
-  margin: auto 15px;
-  margin-left: 5px;
 }
 
 .block__cps-img {

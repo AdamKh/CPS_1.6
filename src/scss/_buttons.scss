@@ -13,44 +13,46 @@ button {
   width: 40px;
   height: 40px;
   transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
-.icon:hover {
-  opacity: 0.7;
-}
+.button {
+  &_burger {
+    background-image: url('../img/icons/burger.svg');
+  }
 
-.button_burger {
-  background-image: url('../img/icons/burger.svg');
-}
+  &_chat {
+    background-image: url('../img/icons/chat.svg');
+  }
 
-.button_chat {
-  background-image: url('../img/icons/chat.svg');
-}
+  &_profile {
+    background-image: url('../img/icons/profile.svg');
+  }
 
-.button_profile {
-  background-image: url('../img/icons/profile.svg');
-}
+  &_repair {
+    background-image: url('../img//icons/repair.svg');
+  }
 
-.button_repair {
-  background-image: url('../img//icons/repair.svg');
-}
+  &_checkstatus {
+    background-image: url('../img/icons/checkstatus.svg');
+  }
 
-.button_checkstatus {
-  background-image: url('../img/icons/checkstatus.svg');
-}
+  &_search {
+    background-image: url('../img/icons/search.svg');
+  }
 
-.button_search {
-  background-image: url('../img/icons/search.svg');
-}
+  &_close {
+    background-image: url('../img/icons/close.svg');
+  }
 
-.button_close {
-  background-image: url('../img/icons/close.svg');
-}
+  &_call {
+    background-image: url('../img/icons/call.svg');
+  }
 
-.button_call {
-  background-image: url('../img/icons/call.svg');
-}
-
-.button_profile {
-  background-image: url('../img/icons/profile.svg');
+  &_profile {
+    background-image: url('../img/icons/profile.svg');
+  }
 }

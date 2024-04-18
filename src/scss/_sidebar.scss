@@ -32,89 +32,85 @@ $width-desktop: 1366px;
     box-shadow: none;
     padding: 30px 24px;
   }
-}
 
-.sidebar::-webkit-scrollbar {
-  width: 0;
-}
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
-/*  sidebar-HEADER  */
+  &__header {
+    justify-content: space-between;
+    margin-bottom: 45px;
 
-.sidebar__header {
-  justify-content: space-between;
-  margin-bottom: 45px;
-}
+    &-item:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
 
-.sidebar__header-item:not(:last-child) {
-  margin-right: 15px;
-}
+  &__button-close {
+    @media screen and (min-width: $width-desktop) {
+      display: none;
+    }
+  }
 
-.sidebar__button-close {
-  @media screen and (min-width: $width-desktop) {
-    display: none;
+  &__menu-item {
+    list-style: none;
+
+    &--active a {
+      color: #7e7e82;
+    }
+
+    &--active::before {
+      position: absolute;
+      content: '';
+      left: -4px;
+      margin-top: -6px;
+      width: 8px;
+      height: 32px;
+      background-color: #41f6d7;
+      border-radius: 4px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
   }
 }
 
-/*  sidebar-MENU  */
+.contacts {
+  & > * {
+    display: block;
+  }
 
-.sidebar__menu-item {
-  list-style: none;
-}
+  & button:not(:last-child) {
+    margin-right: 16px;
+  }
 
-.sidebar__menu-item--active a {
-  color: #7e7e82;
-}
+  &__cps-mail {
+    margin-top: 16px;
+  }
 
-.sidebar__menu-item--active::before {
-  position: absolute;
-  content: '';
-  left: -4px;
-  margin-top: -6px;
-  width: 8px;
-  height: 32px;
-  background-color: #41f6d7;
-  border-radius: 4px;
-}
+  &__number {
+    margin-top: 12px;
+  }
 
-.sidebar__menu-item:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-/*  sidebar-FOOTER  */
-
-.sidebar__footer {
-  margin-top: auto;
-}
-
-.contacts > * {
-  display: block;
-}
-
-.contancts__button:not(:last-child) {
-  margin-right: 16px;
-}
-
-.contacts__cps-mail {
-  margin-top: 16px;
-}
-
-.contacts__number {
-  margin-top: 12px;
+  &__number {
+    font-weight: bold;
+    font-size: 24px;
+  }
 }
 
 .change-lang {
   margin-top: 40px;
+
+  &__link--active {
+    color: #7e7e82;
+  }
 }
 
 a.change-lang__link:not(:last-child) {
   margin-right: 7px;
-}
-
-.contacts__number {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.change-lang__link--active {
-  color: #7e7e82;
 }

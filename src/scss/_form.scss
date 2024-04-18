@@ -1,15 +1,15 @@
-$text-color: #b5b6bc;
+$placeholder-color: #b5b6bc;
 
 .form {
   &__input {
-    color: $text-color;
+    color: #000;
     font-size: 16px;
     line-height: 150%;
     font-family: TTLakes medium;
 
     width: 100%;
     height: 100%;
-    border: 1px solid #eaeaea;
+    border: 1px solid $placeholder-color;
     border-radius: 8px;
     padding: 12px 16px;
   }
@@ -17,4 +17,11 @@ $text-color: #b5b6bc;
   &__message {
     height: 118px;
   }
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: $placeholder-color;
 }

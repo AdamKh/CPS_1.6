@@ -47,12 +47,27 @@ button {
 
 .link {
   text-decoration: none;
-  color: #1b1c21;
+  color: $default-text-color;
   transition-duration: 0.5s;
+
+  &:hover {
+    color: #999;
+  }
 }
 
-.link:hover {
-  color: #999;
+.link-read-more {
+  color: #000;
+  font-weight: bold;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 20px 0;
+
+  &::before {
+    content: url('../img/icons/arrow-down.svg');
+    margin: auto 15px;
+    margin-left: 5px;
+  }
 }
 
 [class$='--flex-center'] {
@@ -62,6 +77,18 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+[class$='--item--tablet'] {
+  @media screen and (min-width: $width-md) {
+    display: block;
+  }
+}
+
+.item_PC {
+  @media screen and (min-width: $width-lg) {
+    display: block;
+  }
 }
 
 .container {
