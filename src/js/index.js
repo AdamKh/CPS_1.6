@@ -152,14 +152,71 @@ showMoreKinds.addEventListener('click', function () {
 const sidebar = document.querySelector('.sidebar')
 const notAside = document.querySelector('.not-aside')
 const burger = document.querySelector('.button_burger')
-const closeSidebar = document.querySelector('.button_close')
+const closeSidebar = document.querySelector('.sidebar__button-close')
+
+const feedback = document.querySelector('.feedback')
+const closeFeedback = document.querySelector('.feedback__button-close')
+const buttonsChat = document.querySelectorAll('.button_chat')
+
+const callRequest = document.querySelector('.call-request')
+const closeCallRequest = document.querySelector('.call-request__button-close')
+const buttonsCall = document.querySelectorAll('.button_call')
 
 burger.addEventListener('click', function () {
-  sidebar.classList.toggle('sidebar-show')
-  notAside.classList.toggle('not-aside--opacity')
+  sidebar.classList.remove('sidebar-show')
+  feedback.classList.remove('feedback-show')
+  callRequest.classList.remove('call-request-show')
+  sidebar.classList.add('sidebar-show')
+  notAside.classList.add('not-aside--opacity')
 })
 
 closeSidebar.addEventListener('click', function () {
-  sidebar.classList.toggle('sidebar-show')
-  notAside.classList.toggle('not-aside--opacity')
+  sidebar.classList.remove('sidebar-show')
+  feedback.classList.remove('feedback-show')
+  callRequest.classList.remove('call-request-show')
+  notAside.classList.remove('not-aside--opacity')
+})
+
+buttonsChat[0].addEventListener('click', function () {
+  sidebar.classList.remove('sidebar-show')
+  feedback.classList.remove('feedback-show')
+  callRequest.classList.remove('call-request-show')
+  feedback.classList.add('feedback-show')
+  notAside.classList.add('not-aside--opacity')
+})
+
+buttonsChat[1].addEventListener('click', function () {
+  sidebar.classList.remove('sidebar-show')
+  feedback.classList.remove('feedback-show')
+  callRequest.classList.remove('call-request-show')
+  feedback.classList.add('feedback-show')
+  notAside.classList.add('not-aside--opacity')
+})
+
+closeFeedback.addEventListener('click', function () {
+  sidebar.classList.remove('sidebar-show')
+  feedback.classList.remove('feedback-show')
+  callRequest.classList.remove('call-request-show')
+  notAside.classList.remove('not-aside--opacity')
+})
+
+buttonsCall[0].addEventListener('click', function () {
+  sidebar.classList.remove('sidebar-show')
+  feedback.classList.remove('feedback-show')
+  callRequest.classList.add('call-request-show')
+  notAside.classList.add('not-aside--opacity')
+})
+
+buttonsCall[1].addEventListener('click', function () {
+  sidebar.classList.remove('sidebar-show')
+  feedback.classList.remove('feedback-show')
+  callRequest.classList.add('call-request-show')
+  notAside.classList.add('not-aside--opacity')
+})
+
+closeCallRequest.addEventListener('click', function () {
+  sidebar.classList.remove('sidebar-show')
+  feedback.classList.remove('feedback-show')
+  callRequest.classList.remove('call-request-show')
+  notAside.classList.remove('not-aside--opacity')
 })
