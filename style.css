@@ -667,14 +667,14 @@ button {
     .slide-menu {
       flex-wrap: wrap;
       padding-bottom: 0; } }
-  .slide-menu .slide-menu__link {
+  .slide-menu__link {
     padding: 10px 16px;
     color: #7e7e82;
     font-weight: bold; }
     @media screen and (min-width: 1120px) {
-      .slide-menu .slide-menu__link {
+      .slide-menu__link {
         flex-grow: 1; } }
-  .slide-menu .slide-menu__link--active {
+  .slide-menu__link--active {
     border: 2px solid #b8ffec;
     background-color: #fff;
     border-radius: 6px; }
@@ -690,11 +690,10 @@ button {
 
 .swiper-pagination {
   position: static; }
-
-.swiper-pagination .swiper-pagination-bullet {
-  background-color: #979797;
-  width: 12px;
-  height: 12px; }
+  .swiper-pagination .swiper-pagination-bullet {
+    background-color: #979797;
+    width: 12px;
+    height: 12px; }
 
 .section-header {
   background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
