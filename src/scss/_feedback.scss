@@ -15,17 +15,17 @@ $width-desktop: 1366px;
   background-color: #fff;
 
   width: 100%;
+  max-width: 440px;
   height: 100vh;
 
-  @media screen and (min-width: $width-md) {
-    max-width: 440px;
+  @media screen and (min-width: 440px) {
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
       -2px 0 4px 0 rgba(69, 79, 126, 0.02);
   }
 
   &__button-close {
     margin-top: 24px;
-    @media screen and (min-width: $width-md) {
+    @media screen and (min-width: 440px) {
       position: absolute;
       right: 470px;
     }
@@ -33,6 +33,7 @@ $width-desktop: 1366px;
 
   &__title {
     font-family: TTLakes bold;
+    font-size: 24px;
     margin-top: 24px;
     margin-bottom: 40px;
 
@@ -44,11 +45,13 @@ $width-desktop: 1366px;
       height: 40px;
       background-color: #41f6d7;
       border-radius: 0 4px 4px 0;
+      margin-top: -3px;
     }
   }
 
   &__input {
     margin-bottom: 16px;
+    resize: none;
   }
 
   &__descripiton {

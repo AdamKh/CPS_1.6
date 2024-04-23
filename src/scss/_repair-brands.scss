@@ -11,7 +11,22 @@ $width-lg: 1120px;
     margin-bottom: 50px;
   }
 
-  .repair-brands::before {
+  &__wrapper {
+    @media screen and (min-width: $width-md) {
+      margin-bottom: 24px;
+
+      display: grid !important;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      gap: 16px;
+      width: 100%;
+    }
+    @media screen and (min-width: $width-lg) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &::before {
     display: block;
     position: absolute;
     content: '';
@@ -21,58 +36,34 @@ $width-lg: 1120px;
     background: #d9fff5;
   }
 
-  .repair-brands__catalog {
-    padding: 0 16px;
-
+  &__swiper-pagination {
     @media screen and (min-width: $width-md) {
-      padding: 0 24px;
-    }
-    @media screen and (min-width: $width-lg) {
-      padding: 0 32px;
+      display: none;
     }
   }
+}
 
-  .repair-brands__wrapper {
-    @media screen and (min-width: $width-md) {
-      margin-bottom: 24px;
-    }
-  }
+.brand-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  .repair-brands__catalog--grid {
-    @media screen and (min-width: $width-md) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-items: center;
-      gap: 16px;
-      width: 100%;
-    }
-    @media screen and (min-width: $width-lg) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  }
+  padding: 0 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background-color: #fff;
+  min-width: 224px;
+  max-width: 240px;
+  height: 72px;
 
-  .brand-card {
-    padding: 0 16px;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    min-width: 224px;
-    max-width: 240px;
-    height: 72px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-  }
-
-  .brand-card:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 16px;
     @media screen and (min-width: $width-md) {
       margin-right: 0;
     }
   }
 
-  .brand-card--table-hidden {
+  &--table-hidden {
     @media screen and (min-width: $width-md) {
       display: none;
     }
@@ -80,23 +71,24 @@ $width-lg: 1120px;
       display: flex;
     }
   }
-  .brand-card--table-show {
+  &--table-show {
     @media screen and (min-width: $width-md) {
       display: flex;
     }
   }
-  .brand-card--pc-hidden {
+
+  &--pc-hidden {
     @media screen and (min-width: $width-lg) {
       display: none;
     }
   }
-  .brand-card--pc-show {
+  &--pc-show {
     @media screen and (min-width: $width-lg) {
       display: flex;
     }
   }
 
-  .brand-card__button {
+  &__button {
     border: 2px solid #ff3e79;
     border-radius: 20px;
     width: 40px;
@@ -104,7 +96,7 @@ $width-lg: 1120px;
     background: url('../img/dropdown.svg') no-repeat center;
   }
 
-  .brand-card__image {
+  &__image {
     display: block;
     margin-left: 16px;
   }

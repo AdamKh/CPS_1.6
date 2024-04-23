@@ -145,4 +145,10 @@ $button-color: #ff3e79;
       margin: 0 16px;
     }
   }
+
+  &__swiper-pagination {
+    @media screen and (min-width: $width-md) {
+      display: none;
+    }
+  }
 }

@@ -11,64 +11,22 @@ $width-lg: 1120px;
     margin-bottom: 50px;
   }
 
-  .kind-card {
-    font-family: TTLakes medium;
-    font-weight: 500;
-    font-size: 16px;
-    color: #1b1c21;
-
-    padding: 16px;
-    margin-right: 16px;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    background-color: #fff;
-    max-width: 240px;
-    height: 160px;
-    position: relative;
-  }
-
-  .repair-kinds__wrapper {
+  &__wrapper {
     @media screen and (min-width: $width-md) {
       margin-bottom: 24px;
-    }
-  }
 
-  .kind-card--table-hidden {
-    @media screen and (min-width: $width-md) {
-      display: none;
+      display: grid !important;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      gap: 16px;
+      width: 100%;
     }
     @media screen and (min-width: $width-lg) {
-      display: flex;
-    }
-  }
-  .kind-card--table-show {
-    @media screen and (min-width: $width-md) {
-      display: flex;
-    }
-  }
-  .kind-card--pc-hidden {
-    @media screen and (min-width: $width-md) {
-      display: none;
-    }
-  }
-  .kind-card--pc-show {
-    @media screen and (min-width: $width-lg) {
-      display: flex;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 
-  .kind-card__button {
-    border: 2px solid #ff3e79;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background: url('../img/dropdown.svg') no-repeat center;
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-  }
-
-  .repair-kinds::before {
+  &::before {
     display: block;
     position: absolute;
     content: '';
@@ -78,21 +36,66 @@ $width-lg: 1120px;
     background: #d9fff5;
   }
 
-  .repair-kinds__catalog {
-    padding: 0 16px;
+  &__swiper-pagination {
+    @media screen and (min-width: $width-md) {
+      display: none;
+    }
+  }
+}
+
+.kind-card {
+  font-family: TTLakes medium;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1b1c21;
+  position: relative;
+  margin-right: 16px;
+
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background-color: #fff;
+  min-width: 224px;
+  max-width: 240px;
+  height: 160px;
+
+  @media screen and (min-width: $width-md) {
+    margin: 0;
+    max-width: 240px;
   }
 
-  .repair-kinds__catalog--grid {
+  &--table-hidden {
     @media screen and (min-width: $width-md) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-items: center;
-      gap: 16px;
-      width: 100%;
+      display: none;
     }
     @media screen and (min-width: $width-lg) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: flex;
     }
+  }
+  &--table-show {
+    @media screen and (min-width: $width-md) {
+      display: flex;
+    }
+  }
+  &--pc-hidden {
+    @media screen and (min-width: $width-lg) {
+      display: none;
+    }
+  }
+  &--pc-show {
+    @media screen and (min-width: $width-lg) {
+      display: flex;
+    }
+  }
+
+  &__button {
+    border: 2px solid #ff3e79;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dropdown.svg') no-repeat center;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
   }
 }
