@@ -144,87 +144,87 @@
           </div>
 
           <div class="repair-brands__catalog repair-brands__catalog--mySwiper swiper container">
-            <ul class="swiper-wrapper repair-brands__wrapper">
-              <li class="swiper-slide brand-card">
+            <div class="swiper-wrapper repair-brands__wrapper">
+              <div class="swiper-slide brand-card">
                 <div class="img-wrapper">
                   
                   <img src="img/brands/lenovo.png" alt="Lenovo" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
-              <li class="swiper-slide brand-card">
+              <div class="swiper-slide brand-card">
                 <div class="img-wrapper">
                   <img src="img/brands/sumsung.png" alt="sumsung" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
-              <li class="swiper-slide brand-card">
+              <div class="swiper-slide brand-card">
                 <div class="img-wrapper">
                   <img src="img/brands/apple.png" alt="apple" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
-              <li class="swiper-slide brand-card">
+              <div class="swiper-slide brand-card">
                 <div class="img-wrapper">
                   <img src="img/brands/viewsonic.png" alt="ViewSonic" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
-              <li class="swiper-slide brand-card">
+              <div class="swiper-slide brand-card">
                 <div class="img-wrapper">
                   <img src="img/brands/bosch.png" alt="bosch" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
-              <li class="swiper-slide brand-card">
+              <div class="swiper-slide brand-card">
                 <div class="img-wrapper">
                   <img src="img/brands/hp.png" alt="hp" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
               
-              <li class="swiper-slide brand-card brand-card--table-hidden">
+              <div class="swiper-slide brand-card brand-card--table-hidden">
                 <div class="img-wrapper">
                   <img src="img/brands/acer.png" alt="acer" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
-              <li class="swiper-slide brand-card brand-card--table-hidden">
+              <div class="swiper-slide brand-card brand-card--table-hidden">
                 <div class="img-wrapper">
                   <img src="img/brands/sony.png" alt="sony" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
               
-              <li class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden">
+              <div class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden">
                 <div class="img-wrapper">
                   <img src="img/brands/lenovo.png" alt="Lenovo" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
-              <li class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden">
+              <div class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden">
                 <div class="img-wrapper">
                   <img src="img/brands/sumsung.png" alt="sumsung" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
+              </div>
 
-              <li class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden">
+              <div class="swiper-slide brand-card brand-card--table-hidden brand-card--pc-hidden">
                 <div class="img-wrapper">
                   <img src="img/brands/apple.png" alt="apple" class="brand-card__image">
                 </div>
                 <button class="brand-card__button"></button>
-              </li>
-            </ul>
+              </div>
+            </div>
 
             <div class="repair-brands__swiper-pagination swiper-pagination"></div>
 
@@ -478,7 +478,7 @@
 
     <div class="feedback container">
       <button class="feedback__button-close button_close icon"></button>
-      <h1 class="feedback__title">Обратная связь</h1>
+      <h2 class="feedback__title">Обратная связь</h2>
       <form action="#" class="feedback__form form" method="get">
         <input placeholder="Имя" name="name" class="feedback__input form__input" type="text" required>
 
@@ -486,11 +486,13 @@
 
         <input placeholder="Электронная почта" name="email" class="feedback__input form__input" type="text" required>
 
-        <textarea class="feedback__input form__input form__message" name="message" required="" placeholder="Сообщение" resize: none;></textarea>
+        <textarea class="feedback__input form__input form__message" name="message" required="" placeholder="Сообщение"></textarea>
 
         <p class="send-info">
-          Нажимая “отправить”, вы даете согласие на <a href="#" class="send-info__link link">обработку персональных  
-          данных</a> и соглашаетесь с <a href="#" class="send-info__link link">нашей политикой конфиденциальности</a>
+          Нажимая “отправить”, вы даете согласие на
+          <a href="#" class="send-info__link link">обработку персональных данных</a>
+          и соглашаетесь с
+          <a href="#" class="send-info__link link">нашей политикой конфиденциальности</a>
         </p>
 
         <button class="feedback__send-button">
@@ -501,18 +503,19 @@
 
     <div class="call-request container">
       <button class="call-request__button-close button_close icon"></button>
-      <h1 class="call-request__title">Заказать звонок</h1>
+      <h2 class="call-request__title">Заказать звонок</h2>
       <form action="#" class="call-request__form form" method="get">
         <input placeholder="Телефон" name="phone_number" class="call-request__input form__input" type="text" required>
 
         <p class="send-info">
-          Нажимая “отправить”, вы даете согласие на 
+          Нажимая “отправить”, вы даете согласие на
           <a href="#" class="send-info__link link">
-            обработку персональных  данных
-          </a> 
-            и соглашаетесь с <a href="#" class="send-info__link link">
-              нашей политикой конфиденциальности
-            </a>
+            обработку персональных данных
+          </a>
+          и соглашаетесь с
+          <a href="#" class="send-info__link link">
+            нашей политикой конфиденциальности
+          </a>
         </p>
 
         <button class="call-request__send-button">
